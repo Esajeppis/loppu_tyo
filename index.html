@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <div id="dataselector">
+    <!-- Date Start Input -->
+    <label for="dateStart">Date Start:</label>
+    <input type="date" id="dateStart" name="dateStart"><br><br>
+    
+    <!-- Date End Input -->
+    <label for="dateEnd">Date End:</label>
+    <input type="date" id="dateEnd" name="dateEnd"><br><br>
+
+    
+    <label>File Choice 1:</label><br>
+    <input type="radio" id="consumption" name="datasource1" value="124">
+    <label for="file1a">Electricity consumption in Finland</label>
+   
+
+    <input type="radio" id="production" name="datasource1" value="74">
+    <label for="file1b">Electricity production in Finland</label>
+    
+
+    <input type="radio" id="prediction" name="datasource1" value="242">
+    <label for="file1c">Electricity production prediction - premilinary</label>
+    
+    <!-- Get button -->
+    <input type="submit" class="button" id="button" value="Get Data">
+    </div>
+    <div id="wrapper"></div>
+
+
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
